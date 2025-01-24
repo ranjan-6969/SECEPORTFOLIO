@@ -1,0 +1,73 @@
+.projects {
+  padding: 2rem;
+  background-color: #e6e6e6;
+  color: #333;
+  animation: fadeInProjects 1.5s ease-out;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.projects h2:hover {
+  color: rgb(179, 251, 97);
+}
+
+.projects ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  animation: fadeInList 1s ease-out;
+}
+
+.projects ul li {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.projects ul li:hover {
+  background: rgb(179, 251, 97);
+  color: white;
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.projects ul li:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Keyframe Animations */
+@keyframes fadeInProjects {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeInList {
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

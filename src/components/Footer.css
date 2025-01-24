@@ -1,0 +1,65 @@
+.footer {
+  background: #282c34;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.footer:hover {
+  background-color: #1c1f24;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.05rem;
+  animation: textFadeIn 1s ease-out;
+  transition: color 0.3s ease;
+}
+
+.footer p:hover {
+  color: rgb(179, 251, 97);
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent);
+  animation: glowRotate 6s linear infinite;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.footer p {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes textFadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes glowRotate {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}

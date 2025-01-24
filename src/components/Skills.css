@@ -1,0 +1,35 @@
+.skills {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+  }
+  
+  .skills h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .skills ul li {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background: #fff;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .skills ul li:hover {
+    background: rgb(179, 251, 97);
+    color: white;
+  }
+  
